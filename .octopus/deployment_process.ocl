@@ -12,17 +12,3 @@ step "Run an Azure Script" {
         worker_pool_variable = ""
     }
 }
-
-step "Azure Web App - Slot Swap Copy" {
-
-    action {
-        properties = {
-            azureWebAppSwap.AzAccount = "azacc"
-            azWebAppSwap.sourceSlot = "#{Octopus.Action.Azure.DeploymentSlot}"
-            azWebAppSwap.targetSlot = "#{slot}"
-            Octopus.Action.Template.Id = "ActionTemplates-1143"
-            Octopus.Action.Template.Version = "4"
-        }
-        worker_pool_variable = ""
-    }
-}
