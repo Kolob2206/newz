@@ -18,7 +18,7 @@ step "az script for cac" {
     action {
         properties = {
             Octopus.Action.Template.Id = "ActionTemplates-1193"
-            Octopus.Action.Template.Version = "0"
+            Octopus.Action.Template.Version = "1"
         }
         worker_pool_variable = ""
     }
