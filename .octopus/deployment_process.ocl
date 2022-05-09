@@ -17,7 +17,7 @@ step "Azure Web App - Slot Swap Copy" {
 
     action {
         properties = {
-            azureWebAppSwap.AzAccount = "#{acc}"
+            azureWebAppSwap.AzAccount = "azacc"
             azWebAppSwap.sourceSlot = "#{Octopus.Action.Azure.DeploymentSlot}"
             azWebAppSwap.targetSlot = "#{slot}"
             Octopus.Action.Template.Id = "ActionTemplates-1143"
